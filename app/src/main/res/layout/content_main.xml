@@ -31,6 +31,15 @@
         android:textColor="@android:color/black"
         android:text="Send Msg"/>
 
+    <TextView
+        android:id="@+id/cameraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="Camera"/>
 
 </LinearLayout>
 

@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private static final String TAG         =       MainActivity.class.getSimpleName();
-    private TextView makeCallTextView,sendMsgTextView;
+    private TextView makeCallTextView,sendMsgTextView,cameraTextView;
 
 
 
@@ -24,8 +24,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar(toolbar);
         makeCallTextView        =       (TextView)findViewById(R.id.makeCallTextView);
         sendMsgTextView         =       (TextView)findViewById(R.id.sendMsgTextView);
+        cameraTextView          =       (TextView)findViewById(R.id.cameraTextView);
         makeCallTextView.setOnClickListener(this);
         sendMsgTextView.setOnClickListener(this);
+        cameraTextView.setOnClickListener(this);
+
     }
 
     @Override
@@ -61,6 +64,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.sendMsgTextView:{
                 Intent intent = new Intent(MainActivity.this,SendMsgActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.cameraTextView:{
+                Intent intent = new Intent(MainActivity.this,CameraActivity.class);
                 startActivity(intent);
                 break;
             }
