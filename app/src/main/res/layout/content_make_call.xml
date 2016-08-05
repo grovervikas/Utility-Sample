@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.vick.com.utilitysample.MakeCallActivity"
+    tools:showIn="@layout/activity_make_call">
+
+
+    <EditText
+        android:id="@+id/enterNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Enter Phone Number"
+        android:inputType="number"
+        android:padding="15dp" />
+
+
+    <TextView
+        android:id="@+id/callNowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALL"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
